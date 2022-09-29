@@ -18,23 +18,34 @@
         <div id="logo" class="t-center">
             <a href=""><img src="images/SLlogo.svg" alt="StrawberryLab" class="logo"></a>
         </div>
-        <nav class="full-width">
-            <div class="menu">
-                <ul class="row jc-center full-width">
-                    <li><a href="#">關於本站</a></li>
-                    <li><a href="#">草莓簡介</a></li>
-                    <li><a href="#">栽培概論</a></li>
-                    <li><a href="#">品種介紹</a></li>
-                    <li><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
-    <section id="slides-img" class="owl-carousel owl-theme">
+    <nav class="full-width">
+        <div class="menu">
+            <ul class="row jc-center full-width">
+                <li><a href="#">關於本站</a></li>
+                <li><a href="#">草莓簡介</a></li>
+                <li><a href="#">栽培概論</a></li>
+                <li><a href="#">品種介紹</a></li>
+                <li><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="slides-img" class="owl-carousel owl-theme fixed-width">
         <img src="images/A.jpg">  
         <img src="images/B.jpg">
         <img src="images/C.jpg">
         <img src="images/D.jpg">
+    </section>
+    <section id="origin" class="px-8 mt-5 mb-5">
+        <div class="fixed-width row t-left">
+            <div class="col-4">
+                <img src="images/origin.jpg" alt="">
+            </div>
+            <div class="col-8 ai-center pl-8">
+                <h2>起源</h2>
+                <p>站主本身為上班族，對於屬於草莓相當之喜愛，開始透入並學習草莓如何種植，由於堅持不使用農藥，過程中不斷試錯，遇到病蟲害便搜尋可以使用的有機資材，找尋解決方法，並嘗試不同品種的草莓栽培，其中最棒的時刻，莫過於草莓植株安然度過炎熱夏天並迎接秋冬的開花收穫季節。</p>
+            </div>
+        </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -47,8 +58,7 @@
                 loop:true,
                 autoplayTimeout:5000,
                 autoplaySpeed:1200,
-                dots:true,
-                dotsSpeed:1200
+                dots:false
             });
         })
     </script>
