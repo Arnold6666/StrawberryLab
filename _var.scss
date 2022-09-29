@@ -1,0 +1,32 @@
+$en:"Segoe UI";
+$tc:"Mocrosoft Jhenghei";
+$breakpoints:(
+    all:0,
+    sm:480px,
+    md:720px,
+    lg:960px,
+    xl:1120px
+);
+$grid:12;
+$spacing:5px;
+$displays:inline block inline-block flex grid table table-cell;
+$justifyContent:flex-start flex-end center space-between space-around;
+$alignItems:flex-start flex-end center stretch;
+$aligns:left center right justify;
+$directions:(
+    left:l,
+    right:r,
+    top:t,
+    bottom:b
+);
+$positions: static relative absolute fixed sticky;
+$colors:(
+    red:#f64242,
+    green:#3af03a,
+    blue:#5d5dff,
+    yellow:#fcfc76,
+    orange:#ffa500,
+    purple:#c01cc0,
+    dark:rgb(21, 21, 21),
+    light:rgb(216, 213, 213)
+);
