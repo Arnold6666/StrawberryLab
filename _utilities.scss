@@ -46,15 +46,15 @@
         }
         @each $direction,$dire in $directions {
             @for $i from 1 through 10{
-                @if(width == 0){
-                    .m#{dire}-#{$i}{
+                @if($width == 0){
+                    .m#{$dire}-#{$i}{
                         margin-#{$direction}: $spacing * $i;
                     }
                     .mx-#{$i}{
                         margin-left: $spacing * $i;
                         margin-right: $spacing * $i;
                     }
-                    .p#{dire}-#{$i}{
+                    .p#{$dire}-#{$i}{
                         padding-#{$direction}: $spacing * $i;
                     }
                     .px-#{$i}{
@@ -62,14 +62,14 @@
                         padding-right: $spacing * $i;
                     }
                 }@else{
-                    .m#{dire}-#{$name}-#{$i}{
+                    .m#{$dire}-#{$name}-#{$i}{
                         margin-#{$direction}: $spacing * $i;
                     }
                     .mx-#{$name}-#{$i}{
                         margin-left: $spacing * $i;
                         margin-right: $spacing * $i;
                     }
-                    .p#{dire}-#{$name}-#{$i}{
+                    .p#{$dire}-#{$name}-#{$i}{
                         padding-#{$direction}: $spacing * $i;
                     }
                     .px-#{$name}-#{$i}{
@@ -81,11 +81,11 @@
         }
         @each $position in $positions {
             @if($width == 0){
-                .position-#{$position}{
+                .p-#{$position}{
                     position: $position;
                 }
             }@else{
-                .position-#{$name}-#{$position}{
+                .p-#{$name}-#{$position}{
                     position: $position;
                 }
             }

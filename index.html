@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StrawberryLab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
-    
+    <header>
+        <div id="logo" class="t-center">
+            <a href=""><img src="images/SLlogo.svg" alt="StrawberryLab" class="logo"></a>
+        </div>
+        <nav class="full-width">
+            <div class="menu">
+                <ul class="row jc-center full-width">
+                    <li><a href="#">關於本站</a></li>
+                    <li><a href="#">草莓簡介</a></li>
+                    <li><a href="#">栽培概論</a></li>
+                    <li><a href="#">品種介紹</a></li>
+                    <li><a href="#"><i class="fas fa-search fa-lg"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="slides-img" class="owl-carousel owl-theme">
+        <img src="images/A.jpg">  
+        <img src="images/B.jpg">
+        <img src="images/C.jpg">
+        <img src="images/D.jpg">
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"></script>
+    <script>
+        $(function(){
+            $('#slides-img').owlCarousel({
+                items:1,
+                autoplay:true,
+                loop:true,
+                autoplayTimeout:5000,
+                autoplaySpeed:1200,
+                dots:true,
+                dotsSpeed:1200
+            });
+        })
+    </script>
 </body>
 </html>
