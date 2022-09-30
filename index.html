@@ -19,7 +19,7 @@
             <a href=""><img src="images/SLlogo.svg" alt="StrawberryLab" class="logo"></a>
         </div>
     </header>
-    <nav class="full-width">
+    <nav class="full-width row jc-center">
         <div class="menu">
             <ul class="row jc-center full-width">
                 <li><a href="#origin">關於本站</a></li>
@@ -63,6 +63,41 @@
             </div>
         </div>
     </section>
+    <section id="guidance" class="mt-5 mb-5 pb-4 pt-6">
+        <div class="fixed-width row">
+            <div class="col-6 p-4">
+                <div class="btn p-4 mb-3 row jc-center">
+                    <p>生長條件<small>  ←Click</small></p>
+                </div>
+                <div class="growthCondition">
+                    <p class="pb-3 px-3">光照：草莓為喜光植物，但又有較強的耐蔭性，苗期、花果期的日照長度為12-15小時。</p>
+                    <p class="pb-3 px-3">溫度：草莓喜溫涼氣候，草莓根系生長溫度10-30℃，適溫18-23℃，莖葉生長適溫為20-30℃</p>
+                    <p class="pb-3 px-3">水分：草莓根系分布淺、蒸騰量大，一般來說土壤含水量約70%即可。</p>
+                    <p class="pb-3 px-3">土壤：草莓宜生長於肥沃、疏鬆透氣、保水保肥好的中性或微酸性壤土壤。</p>
+                </div>
+            </div>
+            <div class="col-6 pl-4">
+                <div class="btn p-4 mb-3 row jc-center">
+                    <p>育苗與管理<small>    ←Click</small></p>
+                </div>
+                <div class="growthCondition">
+                    <p class="pb-3 px-3">老株育苗：親株需健壯，產量高，儘早摘除老葉、果梗、花、果實等。</p>
+                    <p class="pb-3 px-3">新株育苗：健壯之走蔓培育成繁殖親株，再定植於苗床，任其生長產生走蔓，待走蔓根系長成，即成栽培苗。</p>
+                    <p class="pb-3 px-3">入園前清消：「中和亞磷酸」（亞磷酸＋氫氧化鉀） 1000 倍水稀釋液，移植前的 2~3 次密集處理（幼苗期灌注根部，每 7 天使用 1 次，連續 3 次），加強草莓的抗病能力；浸苗處理，「植物油混方」 200~300 倍水稀釋液，將苗完全浸沒約 1~5 秒，取出後即行種植。浸苗處理確實，可以有效去除植株體表的害蟲。</p>
+                    <p class="pb-3 px-3">營養管理：育苗期不需再行追肥，若有缺肥情況，可施用緩效性有機肥或葉面施肥，避免施用速效性化學肥料，造成肥害。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="diease" class="px-8 mt-5 mb-5">
+        <div class="fixed-width row">
+            <div class="col-4">
+                <div class="bg-img" style="background-image: url(images/);"></div>
+            </div>
+            <div class="col-4"></div>
+            <div class="col-4"></div>
+        </div>
+    </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"></script>
@@ -76,6 +111,9 @@
                 autoplaySpeed:1200,
                 dots:false
             });
+        });
+        $('#guidance .btn').click(function(){
+            $('.growthCondition').stop().slideToggle(600);
         })
     </script>
 </body>
