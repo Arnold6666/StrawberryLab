@@ -2,6 +2,15 @@ a{
     text-decoration: none;
     color: black;
 }
+h2{
+    font-size: 30px;
+}
+h4{
+    font-size: 24px;
+}
+p{
+    font-weight: 600;
+}
 #logo{
     padding-top: 15px;
     padding-bottom: 15px;
@@ -12,10 +21,7 @@ a{
     width: 200px;
     height: 90px;
 }
-p{
-    font-weight: 600;
-}
-nav{
+#topNav{
     background-color: #FAD4D4;
     position: sticky;
     top: 0;
@@ -83,12 +89,7 @@ nav .row{
     height: 400px;
     overflow: hidden;
 }
-
-#diease h2{
-    font-size: 30px;
-}
 #diease h4{
-    font-size: 24px;
     background-color: rgba(255, 255, 255, 0.7);
 }
 #diease p{
@@ -114,3 +115,27 @@ nav .row{
 #cultivar nav{
     flex-direction: column;
 }
+#cultivar nav li{
+    background-color: rgb(254, 243, 139);
+    border-bottom: 1px solid white;
+}
+#cultivar nav a{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#cultivar img{
+    object-fit: cover;
+}
+#cultivar p{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 3px;
+}
+.box{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
