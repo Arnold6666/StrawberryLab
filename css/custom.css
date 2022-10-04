@@ -138,4 +138,68 @@ nav .row{
     border: 2px solid black;
     border-radius: 20px;
 }
+footer{
+    z-index: 1;
+}
+.footerLogo{
+    height: 200px;
+    width: 400px;
+}
+.footer-bg{
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.overlay{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+footer img{
+    object-fit: cover;
+}
+footer .weblink a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    /* color: white; */
+    background-color: rgb(255, 232, 232);
+    border: 2px solid white;
+    border-radius: 25px;
+    line-height: 50px;
+}
+footer .weblink i{
+    font-size: 24px;
+}
+.fb{
+    color: #1877f2;
+}
+.tw{
+    color: #1da1f2;
+}
+.ig{
+    color: #fcaf45;
+}
+.yt{
+    color: #ff0000;
+}
+.tl{
+    color: #0088cc;
+}
+.indexLink li{
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+.contact li{
+    margin-top: 10px;
+    font-size: 20px;
+    padding-left: 15px;
+    font-weight: 600;
+}
 
