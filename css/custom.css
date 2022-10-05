@@ -11,41 +11,43 @@ h4{
 p{
     font-weight: 600;
 }
-#logo{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    position: relative;
-    background-color: rgb(255, 255, 255);
-}
 .logo{
     width: 200px;
-    height: 90px;
+    height: 75%;
+    vertical-align: bottom;
 }
 #topNav{
     background-color: #FAD4D4;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    display: flex;
     z-index: 1;
+    height: 90px;
+    transition: 0.5s;
 }
-nav li{
-    list-style: none;
-}
-nav .meun{
-    height: 100px;
-}
-nav .menu a{
+#topNav a{
     font-size: 22px;
     font-weight: 700;
-    display: inline-block;
-    padding: 20px;
-    text-decoration: none;
+    line-height: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-nav a:hover{
-    color: red;
-    transition-duration: 0.6s;
-}
-nav .row{
+#topNav .row{
     flex-direction: column;
+}
+#topNav.active{
+    background-color: rgb(49, 42, 42);
+    height: 70px;
+    transition: 0.5s;
+}
+#topNav.active a{
+    color: white;
+    line-height: 70px;
+    transition: 0.5s;
+}
+#topNav a.active{
+    color: red;
 }
 @media(min-width:600px){
     nav .row {
@@ -112,20 +114,6 @@ nav .row{
     background-repeat: no-repeat;
     background-position: center center;
 }
-#cultivar nav{
-    flex-direction: column;
-}
-#cultivar nav li{
-    background-color: rgb(254, 243, 139);
-    border-bottom: 1px solid white;
-}
-#cultivar nav a{
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 2;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 #cultivar img{
     object-fit: cover;
 }
@@ -191,15 +179,31 @@ footer .weblink i{
     color: #0088cc;
 }
 .indexLink li{
+    list-style: none;
     margin-top: 10px;
     font-size: 20px;
     padding-left: 15px;
     font-weight: 600;
 }
 .contact li{
+    list-style: none;
     margin-top: 10px;
     font-size: 20px;
     padding-left: 15px;
     font-weight: 600;
+}
+#gotop{
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    background-color: rgb(253, 134, 134);
+    color: rgb(0, 0, 0);
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    display: none;
 }
 
