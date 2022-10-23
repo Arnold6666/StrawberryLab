@@ -14,7 +14,7 @@
 
 </head>
 <body>
-    <nav id="topNav">
+    <nav id="topNav" class="row">
         <img src="images/SLlogo.svg" alt="StrawberryLab" class="logo mt-2">
         <a href="#" data-target="#origin">關於本站</a>
         <a href="#" data-target="#intro">草莓簡介</a>
@@ -273,10 +273,6 @@
                     let target = $(this).data('target');
                     let offset = $(target).offset().top;
                     // console.log(offset);
-                    if(h >= offset - 100){
-                        $('#topNav').find('a').removeClass('active');
-                        $(this).addClass('active');
-                    }
                 })
             });
         });
